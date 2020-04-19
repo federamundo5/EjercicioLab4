@@ -1,0 +1,21 @@
+<table id="tablaListado">
+    <thead>
+      <tr>
+        <th>Producto</th>
+        <th>Precio</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products">
+        <td>{{product.descripcion}}</td>
+        <td>{{product.precio}}</td>
+        <td><button type="button" class="btn btn-info btn-circle"   (click)="deleteProduct(product)">X <i class="fa fa-check"></i>
+        </button></td>
+      </tr>
+     
+    </tbody>
+  </table>
+  
+  
+  
