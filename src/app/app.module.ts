@@ -9,8 +9,9 @@ import { TablaProductosComponent } from './tabla-productos/tabla-productos.compo
 import {MatTableModule} from '@angular/material/table';
 import { TablaProductosMaterialsComponent } from './tabla-productos-materials/tabla-productos-materials.component';
 import { BusquedaProductoComponent } from './busqueda-producto/busqueda-producto.component';
+import { PaisesService } from './paises.service';
+import { HttpClientModule } from '@angular/common/http';
 
-  
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,9 +24,10 @@ import { BusquedaProductoComponent } from './busqueda-producto/busqueda-producto
     BrowserModule,
     AppRoutingModule,
     MatTableModule,
+    HttpClientModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [PaisesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
